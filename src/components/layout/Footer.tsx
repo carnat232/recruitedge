@@ -31,7 +31,7 @@ export function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center gap-2">
-              <img src={logo} alt="RecruiteEdgeGlobal" className="h-12 w-auto" />
+              <img src={logo} alt="RecruiteEdgeGlobal" className="h-20 w-auto" />
             </Link>
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
               Connecting trusted employers with top-tier talent worldwide through structured, confidential, and results-driven recruitment solutions.
