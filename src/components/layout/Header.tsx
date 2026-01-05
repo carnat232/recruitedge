@@ -48,7 +48,7 @@ export function Header() {
         <nav className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <img src={logo} alt="RecruiteEdgeGlobal" className="h-16 w-auto" />
+            <img src={logo} alt="RecruiteEdgeGlobal" className="h-20 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
