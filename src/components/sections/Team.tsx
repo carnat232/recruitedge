@@ -1,34 +1,35 @@
 import { AnimatedSection } from "@/components/AnimatedSection";
 import { Linkedin, Mail } from "lucide-react";
 
+import catherineBailey from "@/assets/team/catherine-bailey.jpg";
+import marthaKruger from "@/assets/team/martha-kruger.jpg";
+import nancyJones from "@/assets/team/nancy-jones.jpg";
+import douglasEure from "@/assets/team/douglas-eure.jpg";
+
 const team = [
   {
-    name: "Michael Grant",
-    role: "Managing Director",
-    bio: "15+ years in global recruitment and executive hiring.",
-    initials: "MG",
-    color: "bg-gradient-navy",
+    name: "Catherine J. Bailey",
+    role: "Founder & Managing Director",
+    bio: "Strategic recruitment leader with 10+ years in executive hiring, talent consulting, and workforce strategy.",
+    image: catherineBailey,
   },
   {
-    name: "Olivia Bennett",
-    role: "Head of Talent Solutions",
-    bio: "Specialist in employer partnerships and workforce strategy.",
-    initials: "OB",
-    color: "bg-gradient-teal",
+    name: "Martha H. Kruger",
+    role: "Senior Talent Consultant",
+    bio: "Specialist in global hiring, candidate experience, and employer advisory services.",
+    image: marthaKruger,
   },
   {
-    name: "Samuel Adeyemi",
-    role: "Senior Recruitment Consultant",
-    bio: "Expert in candidate sourcing and placement success.",
-    initials: "SA",
-    color: "bg-gradient-gold",
+    name: "Nancy J. Jones",
+    role: "Lead Recruitment Strategist",
+    bio: "Expert in HR operations, senior role matching, and candidate lifecycle design.",
+    image: nancyJones,
   },
   {
-    name: "Laura Chen",
-    role: "Client & Candidate Success Manager",
-    bio: "Ensures seamless recruitment experiences.",
-    initials: "LC",
-    color: "bg-secondary",
+    name: "Douglas G. Eure",
+    role: "Head of Employer Partnerships",
+    bio: "Drives key relationships with global employers and oversees recruitment quality.",
+    image: douglasEure,
   },
 ];
 
@@ -52,8 +53,12 @@ export function Team() {
           {team.map((member, index) => (
             <AnimatedSection key={index} delay={index * 0.1}>
               <div className="bg-card rounded-2xl p-6 shadow-md border border-border text-center group hover:shadow-xl transition-all duration-300">
-                <div className={`w-24 h-24 rounded-2xl ${member.color} flex items-center justify-center mx-auto mb-4`}>
-                  <span className="text-primary-foreground font-bold text-2xl">{member.initials}</span>
+                <div className="w-24 h-24 rounded-2xl overflow-hidden mx-auto mb-4">
+                  <img 
+                    src={member.image} 
+                    alt={member.name}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <h3 className="text-xl font-semibold text-foreground mb-1">{member.name}</h3>
                 <p className="text-secondary font-medium text-sm mb-3">{member.role}</p>
