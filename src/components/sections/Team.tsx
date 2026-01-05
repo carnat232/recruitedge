@@ -52,7 +52,7 @@ export function Team() {
           {team.map((member, index) => (
             <AnimatedSection key={index} delay={index * 0.1}>
               <div className="bg-card rounded-2xl p-6 shadow-md border border-border text-center group hover:shadow-xl transition-all duration-300">
-                <div className="w-32 h-32 rounded-2xl overflow-hidden mx-auto mb-4">
+                <div className="w-40 h-40 rounded-2xl overflow-hidden mx-auto mb-4">
                   <img 
                     src={member.image} 
                     alt={member.name}

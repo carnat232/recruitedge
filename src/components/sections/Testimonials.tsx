@@ -1,5 +1,7 @@
+import { useState } from "react";
 import { AnimatedSection } from "@/components/AnimatedSection";
-import { Quote, Building2, User } from "lucide-react";
+import { Quote, Building2, User, ChevronDown, ChevronUp } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const testimonials = [
   {
@@ -30,9 +32,40 @@ const testimonials = [
     company: "Now at Leading Agency",
     type: "candidate",
   },
+  {
+    quote: "We've worked with many recruitment agencies, but RecruiteEdgeGlobal stands out for their professionalism and attention to detail. They truly understand our culture and hiring needs.",
+    author: "Michael Brooks",
+    role: "VP of Operations",
+    company: "Innovate Solutions",
+    type: "employer",
+  },
+  {
+    quote: "From the initial consultation to the final placement, the experience was seamless. They matched me with a role that perfectly aligned with my skills and aspirations.",
+    author: "Priya Sharma",
+    role: "Data Analyst",
+    company: "Now at Tech Startup",
+    type: "candidate",
+  },
+  {
+    quote: "Their executive search capabilities are unmatched. They found us a C-level candidate who has transformed our organization within the first year.",
+    author: "Robert Williams",
+    role: "Board Member",
+    company: "Enterprise Holdings",
+    type: "employer",
+  },
+  {
+    quote: "The team went above and beyond to prepare me for interviews. Their industry knowledge and personalized approach made all the difference in my job search.",
+    author: "Anna Kowalski",
+    role: "Project Manager",
+    company: "Placed at Consulting Firm",
+    type: "candidate",
+  },
 ];
 
 export function Testimonials() {
+  const [showAll, setShowAll] = useState(false);
+  const displayedTestimonials = showAll ? testimonials : testimonials.slice(0, 4);
+
   return (
     <section className="py-24 bg-background">
       <div className="container mx-auto px-4">
@@ -49,7 +82,7 @@ export function Testimonials() {
         </AnimatedSection>
 
         <div className="grid md:grid-cols-2 gap-6">
-          {testimonials.map((testimonial, index) => (
+          {displayedTestimonials.map((testimonial, index) => (
             <AnimatedSection key={index} delay={index * 0.1}>
               <div className="bg-card rounded-2xl p-8 shadow-md border border-border h-full relative">
                 <Quote className="w-10 h-10 text-secondary/20 absolute top-6 right-6" />
@@ -81,6 +114,26 @@ export function Testimonials() {
             </AnimatedSection>
           ))}
         </div>
+
+        {testimonials.length > 4 && (
+          <div className="text-center mt-10">
+            <Button
+              variant="outline"
+              onClick={() => setShowAll(!showAll)}
+              className="gap-2"
+            >
+              {showAll ? (
+                <>
+                  Show Less <ChevronUp className="w-4 h-4" />
+                </>
+              ) : (
+                <>
+                  Read More <ChevronDown className="w-4 h-4" />
+                </>
+              )}
+            </Button>
+          </div>
+        )}
       </div>
     </section>
   );
