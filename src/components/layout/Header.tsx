@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Upload } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import logo from "@/assets/logo.png";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -47,15 +48,7 @@ export function Header() {
         <nav className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-lg bg-gradient-teal flex items-center justify-center">
-              <span className="text-primary-foreground font-heading font-bold text-lg">R</span>
-            </div>
-            <span className={cn(
-              "font-heading font-bold text-xl transition-colors",
-              isScrolled ? "text-primary" : "text-primary-foreground"
-            )}>
-              Recruite<span className="text-secondary">Edge</span>Global
-            </span>
+            <img src={logo} alt="RecruiteEdgeGlobal" className="h-12 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
