@@ -34,7 +34,7 @@ const team = [
 
 export function Team() {
   return (
-    <section className="py-24 bg-muted/50">
+    <section className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <AnimatedSection className="text-center mb-16">
           <span className="inline-block px-4 py-2 rounded-full bg-secondary/10 text-secondary text-sm font-medium mb-4">
@@ -48,20 +48,20 @@ export function Team() {
           </p>
         </AnimatedSection>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {team.map((member, index) => (
             <AnimatedSection key={index} delay={index * 0.1}>
-              <div className="bg-card rounded-2xl p-6 shadow-md border border-border text-center group hover:shadow-xl transition-all duration-300">
-                <div className="w-40 h-40 rounded-2xl overflow-hidden mx-auto mb-4">
+              <div className="text-center group">
+                <div className="aspect-[3/4] rounded-lg overflow-hidden mb-6 bg-muted">
                   <img 
                     src={member.image} 
                     alt={member.name}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
-                <h3 className="text-xl font-semibold text-foreground mb-1">{member.name}</h3>
+                <h3 className="text-xl font-bold text-foreground mb-2">{member.name}</h3>
                 <p className="text-secondary font-medium text-sm mb-3">{member.role}</p>
-                <p className="text-muted-foreground text-sm">{member.bio}</p>
+                <p className="text-muted-foreground text-sm italic leading-relaxed">{member.bio}</p>
               </div>
             </AnimatedSection>
           ))}
