@@ -1,5 +1,4 @@
 import { AnimatedSection } from "@/components/AnimatedSection";
-import { Linkedin, Mail } from "lucide-react";
 
 import catherineBailey from "@/assets/team/catherine-bailey.jpg";
 import marthaKruger from "@/assets/team/martha-kruger.jpg";
@@ -53,7 +52,7 @@ export function Team() {
           {team.map((member, index) => (
             <AnimatedSection key={index} delay={index * 0.1}>
               <div className="bg-card rounded-2xl p-6 shadow-md border border-border text-center group hover:shadow-xl transition-all duration-300">
-                <div className="w-24 h-24 rounded-2xl overflow-hidden mx-auto mb-4">
+                <div className="w-32 h-32 rounded-2xl overflow-hidden mx-auto mb-4">
                   <img 
                     src={member.image} 
                     alt={member.name}
@@ -62,21 +61,7 @@ export function Team() {
                 </div>
                 <h3 className="text-xl font-semibold text-foreground mb-1">{member.name}</h3>
                 <p className="text-secondary font-medium text-sm mb-3">{member.role}</p>
-                <p className="text-muted-foreground text-sm mb-4">{member.bio}</p>
-                <div className="flex justify-center gap-3">
-                  <a
-                    href="#"
-                    className="w-9 h-9 rounded-lg bg-muted flex items-center justify-center hover:bg-secondary hover:text-secondary-foreground transition-colors"
-                  >
-                    <Linkedin className="w-4 h-4" />
-                  </a>
-                  <a
-                    href="#"
-                    className="w-9 h-9 rounded-lg bg-muted flex items-center justify-center hover:bg-secondary hover:text-secondary-foreground transition-colors"
-                  >
-                    <Mail className="w-4 h-4" />
-                  </a>
-                </div>
+                <p className="text-muted-foreground text-sm">{member.bio}</p>
               </div>
             </AnimatedSection>
           ))}
