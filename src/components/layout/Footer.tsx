@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, Linkedin, Twitter } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const footerLinks = {
   company: [
@@ -30,12 +31,7 @@ export function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-lg bg-gradient-teal flex items-center justify-center">
-                <span className="text-primary-foreground font-heading font-bold text-lg">R</span>
-              </div>
-              <span className="font-heading font-bold text-xl">
-                Recruite<span className="text-accent">Edge</span>Global
-              </span>
+              <img src={logo} alt="RecruiteEdgeGlobal" className="h-12 w-auto" />
             </Link>
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
               Connecting trusted employers with top-tier talent worldwide through structured, confidential, and results-driven recruitment solutions.
