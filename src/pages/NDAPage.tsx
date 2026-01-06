@@ -51,7 +51,7 @@ const NDAPage = () => {
                 <div>
                   <h2 className="text-2xl font-bold text-foreground mb-4">Your Rights</h2>
                   <p className="text-muted-foreground leading-relaxed">
-                    You have the right to access, update, or delete your personal information at any time. You may also withdraw your consent for us to process your data. Contact us at privacy@recruiteedgeglobal.com to exercise your rights.
+                    You have the right to access, update, or delete your personal information at any time. You may also withdraw your consent for us to process your data. Contact us at info@recruitedgeglobal.com to exercise your rights.
                   </p>
                 </div>
 
