@@ -55,8 +55,8 @@ export function Hero() {
         }}
       />
 
-      <div className="container mx-auto px-4 py-32 relative z-10">
-        <div className="max-w-4xl">
+      <div className="container mx-auto px-4 py-32 relative z-10 text-center flex flex-col items-center">
+        <div className="max-w-4xl flex flex-col items-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -90,7 +90,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-xl md:text-2xl text-primary-foreground/80 mb-10 max-w-2xl leading-relaxed"
+            className="text-xl md:text-2xl text-primary-foreground/80 mb-10 max-w-2xl leading-relaxed mx-auto"
           >
             RecruiteEdgeGlobal connects trusted employers with top-tier talent worldwide through structured, confidential, and results-driven recruitment solutions.
           </motion.p>
@@ -99,7 +99,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="flex flex-col sm:flex-row gap-4 mb-14"
+            className="flex flex-col sm:flex-row gap-4 mb-14 justify-center"
           >
             <Link to="/employers">
               <Button variant="gold" size="xl" className="group gap-2 shadow-lg shadow-accent/25">
