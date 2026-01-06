@@ -55,14 +55,14 @@ export function Hero() {
         }}
       />
 
-      <div className="container mx-auto px-4 py-32 relative z-10 text-center flex flex-col items-center">
-        <div className="max-w-4xl flex flex-col items-center">
+      <div className="container mx-auto px-4 py-16 md:py-32 relative z-10 text-center flex flex-col items-center">
+        <div className="max-w-4xl flex flex-col items-center px-2">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <span className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-secondary/30 to-secondary/10 border border-secondary/30 text-secondary text-sm font-medium mb-6 backdrop-blur-sm">
+            <span className="inline-flex items-center gap-2 px-4 py-2 md:px-5 md:py-2.5 rounded-full bg-gradient-to-r from-secondary/30 to-secondary/10 border border-secondary/30 text-secondary text-xs md:text-sm font-medium mb-4 md:mb-6 backdrop-blur-sm">
               <span className="w-2 h-2 rounded-full bg-secondary animate-pulse" />
               Global Recruitment Excellence
             </span>
@@ -72,16 +72,16 @@ export function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-4xl md:text-5xl lg:text-7xl font-bold text-primary-foreground leading-tight mb-6"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-primary-foreground leading-tight mb-4 md:mb-6"
           >
             Your Competitive Edge in{" "}
-            <span className="relative">
+            <span className="relative inline-block">
               <span className="text-gradient-gold">Global Recruitment</span>
               <motion.span
                 initial={{ scaleX: 0 }}
                 animate={{ scaleX: 1 }}
                 transition={{ duration: 0.8, delay: 0.5 }}
-                className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-accent to-accent/50 rounded-full origin-left"
+                className="absolute -bottom-1 md:-bottom-2 left-0 w-full h-0.5 md:h-1 bg-gradient-to-r from-accent to-accent/50 rounded-full origin-left"
               />
             </span>
           </motion.h1>
@@ -90,7 +90,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-xl md:text-2xl text-primary-foreground/80 mb-10 max-w-2xl leading-relaxed mx-auto"
+            className="text-base sm:text-lg md:text-xl lg:text-2xl text-primary-foreground/80 mb-8 md:mb-10 max-w-2xl leading-relaxed mx-auto px-2"
           >
             RecruiteEdgeGlobal connects trusted employers with top-tier talent worldwide through structured, confidential, and results-driven recruitment solutions.
           </motion.p>
@@ -99,16 +99,16 @@ export function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="flex flex-col sm:flex-row gap-4 mb-14 justify-center"
+            className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-10 md:mb-14 justify-center w-full sm:w-auto"
           >
-            <Link to="/employers">
-              <Button variant="gold" size="xl" className="group gap-2 shadow-lg shadow-accent/25">
+            <Link to="/employers" className="w-full sm:w-auto">
+              <Button variant="gold" size="xl" className="group gap-2 shadow-lg shadow-accent/25 w-full sm:w-auto">
                 Hire Talent
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>
-            <Link to="/candidates">
-              <Button variant="outline-light" size="xl" className="backdrop-blur-sm bg-primary-foreground/5 hover:bg-primary-foreground/10">
+            <Link to="/candidates" className="w-full sm:w-auto">
+              <Button variant="outline-light" size="xl" className="backdrop-blur-sm bg-primary-foreground/5 hover:bg-primary-foreground/10 w-full sm:w-auto">
                 Find a Job
               </Button>
             </Link>
@@ -118,7 +118,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="grid grid-cols-2 lg:grid-cols-4 gap-3"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-3 w-full"
           >
             {trustIndicators.map((item, index) => (
               <motion.div
@@ -127,12 +127,12 @@ export function Hero() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.4, delay: 0.5 + index * 0.1 }}
                 whileHover={{ scale: 1.05, y: -2 }}
-                className="flex items-center gap-3 px-4 py-4 rounded-2xl bg-primary-foreground/5 border border-primary-foreground/10 backdrop-blur-md hover:bg-primary-foreground/10 hover:border-secondary/30 transition-all cursor-default"
+                className="flex items-center gap-2 md:gap-3 px-3 py-3 md:px-4 md:py-4 rounded-xl md:rounded-2xl bg-primary-foreground/5 border border-primary-foreground/10 backdrop-blur-md hover:bg-primary-foreground/10 hover:border-secondary/30 transition-all cursor-default"
               >
-                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-accent/20 to-accent/5 flex items-center justify-center">
-                  <item.icon className="w-5 h-5 text-accent" />
+                <div className="w-8 h-8 md:w-10 md:h-10 rounded-lg md:rounded-xl bg-gradient-to-br from-accent/20 to-accent/5 flex items-center justify-center flex-shrink-0">
+                  <item.icon className="w-4 h-4 md:w-5 md:h-5 text-accent" />
                 </div>
-                <span className="text-sm font-medium text-primary-foreground/90">{item.text}</span>
+                <span className="text-xs md:text-sm font-medium text-primary-foreground/90">{item.text}</span>
               </motion.div>
             ))}
           </motion.div>
