@@ -87,8 +87,8 @@ const ContactPage = () => {
                     </div>
                     <div>
                       <div className="font-medium text-foreground">Email</div>
-                      <a href="mailto:contact@recruiteedgeglobal.com" className="text-muted-foreground hover:text-secondary">
-                        contact@recruiteedgeglobal.com
+                      <a href="mailto:info@recruitedgeglobal.com" className="text-muted-foreground hover:text-secondary">
+                        info@recruitedgeglobal.com
                       </a>
                     </div>
                   </div>

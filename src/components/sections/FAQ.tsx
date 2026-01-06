@@ -45,7 +45,7 @@ const faqs = [
   },
   {
     question: "How can I contact a recruiter?",
-    answer: "You can reach us through our contact form, email at contact@recruiteedgeglobal.com, or call our office directly. We aim to respond to all inquiries within 24 business hours.",
+    answer: "You can reach us through our contact form, email at info@recruitedgeglobal.com, or call our office directly. We aim to respond to all inquiries within 24 business hours.",
   },
 ];
 
