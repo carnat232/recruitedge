@@ -92,7 +92,7 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-base sm:text-lg md:text-xl lg:text-2xl text-primary-foreground/80 mb-8 md:mb-10 max-w-2xl leading-relaxed mx-auto px-2"
           >
-            RecruiteEdgeGlobal connects trusted employers with top-tier talent worldwide through structured, confidential, and results-driven recruitment solutions.
+            RecruitEdgeGlobal connects trusted employers with top-tier talent worldwide through structured, confidential, and results-driven recruitment solutions.
           </motion.p>
 
           <motion.div

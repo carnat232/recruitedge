@@ -46,7 +46,7 @@ const EmployersPage = () => {
                 Find <span className="text-gradient-gold">Exceptional Talent</span> for Your Organization
               </h1>
               <p className="text-xl text-primary-foreground/70 leading-relaxed mb-8">
-                Partner with RecruiteEdgeGlobal to access top-tier professionals who drive results. Our structured approach delivers quality candidates efficiently.
+                Partner with RecruitEdgeGlobal to access top-tier professionals who drive results. Our structured approach delivers quality candidates efficiently.
               </p>
               <Link to="/contact">
                 <Button variant="gold" size="xl" className="gap-2">

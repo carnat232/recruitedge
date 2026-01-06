@@ -31,7 +31,7 @@ export function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center gap-2">
-              <img src={logo} alt="RecruiteEdgeGlobal" className="h-28 w-auto" />
+              <img src={logo} alt="RecruitEdgeGlobal" className="h-28 w-auto" />
             </Link>
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
               Connecting trusted employers with top-tier talent worldwide through structured, confidential, and results-driven recruitment solutions.
@@ -109,7 +109,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-primary-foreground/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-primary-foreground/50 text-sm">
-            © {new Date().getFullYear()} RecruiteEdgeGlobal. All rights reserved.
+            © {new Date().getFullYear()} RecruitEdgeGlobal. All rights reserved.
           </p>
           <div className="flex gap-6">
             {footerLinks.legal.map((link) => (

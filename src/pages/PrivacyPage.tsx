@@ -23,7 +23,7 @@ const PrivacyPage = () => {
                 <div>
                   <h2 className="text-2xl font-bold text-foreground mb-4">1. Introduction</h2>
                   <p className="text-muted-foreground leading-relaxed">
-                    RecruiteEdgeGlobal collects and processes personal data solely for recruitment purposes. We follow strict data-protection standards to ensure security, transparency, and lawful processing of information.
+                    RecruitEdgeGlobal collects and processes personal data solely for recruitment purposes. We follow strict data-protection standards to ensure security, transparency, and lawful processing of information.
                   </p>
                 </div>
 

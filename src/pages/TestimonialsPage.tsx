@@ -17,7 +17,7 @@ const TestimonialsPage = () => {
               Success Stories from <span className="text-gradient-gold">Our Clients</span>
             </h1>
             <p className="text-xl text-primary-foreground/70 leading-relaxed">
-              Hear what employers and candidates say about their experience with RecruiteEdgeGlobal.
+              Hear what employers and candidates say about their experience with RecruitEdgeGlobal.
             </p>
           </AnimatedSection>
         </div>
