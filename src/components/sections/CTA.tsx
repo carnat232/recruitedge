@@ -18,7 +18,7 @@ export function CTA() {
             Ready to Get Started?
           </h2>
           <p className="text-secondary-foreground/80 text-lg max-w-2xl mx-auto mb-8">
-            Whether you're hiring or job seeking, take the next step with RecruiteEdgeGlobal.
+            Whether you're hiring or job seeking, take the next step with RecruitEdgeGlobal.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link to="/employers">

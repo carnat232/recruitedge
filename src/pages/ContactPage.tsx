@@ -39,7 +39,7 @@ const ContactPage = () => {
     setIsSubmitted(true);
     toast({
       title: "Message Sent!",
-      description: "Thank you for contacting RecruiteEdgeGlobal. Our team will respond shortly.",
+      description: "Thank you for contacting RecruitEdgeGlobal. Our team will respond shortly.",
     });
   };
 
@@ -142,7 +142,7 @@ const ContactPage = () => {
                     </div>
                     <h3 className="text-2xl font-bold text-foreground mb-2">Thank You!</h3>
                     <p className="text-muted-foreground mb-6">
-                      Thank you for contacting RecruiteEdgeGlobal. Our team will respond shortly.
+                      Thank you for contacting RecruitEdgeGlobal. Our team will respond shortly.
                     </p>
                     <Button onClick={() => setIsSubmitted(false)} variant="outline">
                       Send Another Message

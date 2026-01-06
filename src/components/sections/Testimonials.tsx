@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 const testimonials = [
   {
-    quote: "RecruiteEdgeGlobal delivered high-quality candidates efficiently. A truly professional recruitment partner that understands our industry and delivers results consistently.",
+    quote: "RecruitEdgeGlobal delivered high-quality candidates efficiently. A truly professional recruitment partner that understands our industry and delivers results consistently.",
     author: "Sarah Mitchell",
     role: "HR Director",
     company: "TechCorp International",
@@ -33,7 +33,7 @@ const testimonials = [
     type: "candidate",
   },
   {
-    quote: "We've worked with many recruitment agencies, but RecruiteEdgeGlobal stands out for their professionalism and attention to detail. They truly understand our culture and hiring needs.",
+    quote: "We've worked with many recruitment agencies, but RecruitEdgeGlobal stands out for their professionalism and attention to detail. They truly understand our culture and hiring needs.",
     author: "Michael Brooks",
     role: "VP of Operations",
     company: "Innovate Solutions",

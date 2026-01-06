@@ -46,7 +46,7 @@ const CandidatesPage = () => {
                 Advance Your Career with <span className="text-accent">Global Opportunities</span>
               </h1>
               <p className="text-xl text-secondary-foreground/80 leading-relaxed mb-8">
-                Let RecruiteEdgeGlobal connect you with your next career opportunity. Expert guidance, global reach, and completely free for candidates.
+                Let RecruitEdgeGlobal connect you with your next career opportunity. Expert guidance, global reach, and completely free for candidates.
               </p>
               <Link to="/upload-cv">
                 <Button variant="gold" size="xl" className="gap-2">

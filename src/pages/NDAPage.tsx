@@ -23,7 +23,7 @@ const NDAPage = () => {
                 <div>
                   <h2 className="text-2xl font-bold text-foreground mb-4">Confidentiality Commitment</h2>
                   <p className="text-muted-foreground leading-relaxed">
-                    All candidate information submitted to RecruiteEdgeGlobal is treated as strictly confidential. By submitting your CV, you authorize RecruiteEdgeGlobal to store and share your information only with potential employers for recruitment purposes.
+                    All candidate information submitted to RecruitEdgeGlobal is treated as strictly confidential. By submitting your CV, you authorize RecruitEdgeGlobal to store and share your information only with potential employers for recruitment purposes.
                   </p>
                 </div>
 

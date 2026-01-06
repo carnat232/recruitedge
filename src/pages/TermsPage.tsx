@@ -23,14 +23,14 @@ const TermsPage = () => {
                 <div>
                   <h2 className="text-2xl font-bold text-foreground mb-4">1. Acceptance of Terms</h2>
                   <p className="text-muted-foreground leading-relaxed">
-                    By using this website, you agree to our recruitment practices and policies. RecruiteEdgeGlobal acts as a recruitment intermediary and does not guarantee employment outcomes.
+                    By using this website, you agree to our recruitment practices and policies. RecruitEdgeGlobal acts as a recruitment intermediary and does not guarantee employment outcomes.
                   </p>
                 </div>
 
                 <div>
                   <h2 className="text-2xl font-bold text-foreground mb-4">2. Services Description</h2>
                   <p className="text-muted-foreground leading-relaxed">
-                    RecruiteEdgeGlobal provides recruitment and staffing services connecting employers with job candidates. We facilitate introductions and provide recruitment support but do not directly employ candidates placed with client organizations.
+                    RecruitEdgeGlobal provides recruitment and staffing services connecting employers with job candidates. We facilitate introductions and provide recruitment support but do not directly employ candidates placed with client organizations.
                   </p>
                 </div>
 
@@ -51,14 +51,14 @@ const TermsPage = () => {
                 <div>
                   <h2 className="text-2xl font-bold text-foreground mb-4">5. Intellectual Property</h2>
                   <p className="text-muted-foreground leading-relaxed">
-                    All content on this website, including text, graphics, logos, and software, is the property of RecruiteEdgeGlobal and protected by applicable intellectual property laws.
+                    All content on this website, including text, graphics, logos, and software, is the property of RecruitEdgeGlobal and protected by applicable intellectual property laws.
                   </p>
                 </div>
 
                 <div>
                   <h2 className="text-2xl font-bold text-foreground mb-4">6. Limitation of Liability</h2>
                   <p className="text-muted-foreground leading-relaxed">
-                    RecruiteEdgeGlobal shall not be liable for any indirect, incidental, or consequential damages arising from the use of our services or website.
+                    RecruitEdgeGlobal shall not be liable for any indirect, incidental, or consequential damages arising from the use of our services or website.
                   </p>
                 </div>
 

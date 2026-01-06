@@ -15,14 +15,14 @@ export function About() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <AnimatedSection>
             <span className="inline-block px-4 py-2 rounded-full bg-secondary/10 text-secondary text-sm font-medium mb-4">
-              About RecruiteEdgeGlobal
+              About RecruitEdgeGlobal
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
               Your Trusted Partner in{" "}
               <span className="text-secondary">Global Talent Acquisition</span>
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              RecruiteEdgeGlobal is a global recruitment agency committed to delivering exceptional hiring outcomes for employers and meaningful career opportunities for professionals.
+              RecruitEdgeGlobal is a global recruitment agency committed to delivering exceptional hiring outcomes for employers and meaningful career opportunities for professionals.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
               Our approach combines industry expertise, structured processes, and a people-first mindset to ensure quality placements that create long-term success for both clients and candidates.

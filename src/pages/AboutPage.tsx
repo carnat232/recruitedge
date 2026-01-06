@@ -30,7 +30,7 @@ const AboutPage = () => {
               Your Trusted Partner in <span className="text-gradient-gold">Global Talent Acquisition</span>
             </h1>
             <p className="text-xl text-primary-foreground/70 leading-relaxed">
-              RecruiteEdgeGlobal is a global recruitment agency committed to delivering exceptional hiring outcomes for employers and meaningful career opportunities for professionals worldwide.
+              RecruitEdgeGlobal is a global recruitment agency committed to delivering exceptional hiring outcomes for employers and meaningful career opportunities for professionals worldwide.
             </p>
           </AnimatedSection>
         </div>
