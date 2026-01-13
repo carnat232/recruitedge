@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Shield, Globe, Users, Award, ArrowRight } from "lucide-react";
+import { memo } from "react";
 
 const trustIndicators = [
   { icon: Shield, text: "Confidential Recruitment" },
@@ -10,37 +11,16 @@ const trustIndicators = [
   { icon: Award, text: "Ethical Hiring Standards" },
 ];
 
-export function Hero() {
+export const Hero = memo(function Hero() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Animated Background Gradient */}
+      {/* Static Background Gradient - no animation for better performance */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/95 to-primary/90" />
       
-      {/* Floating Orbs */}
-      <motion.div
-        animate={{ 
-          scale: [1, 1.2, 1],
-          opacity: [0.3, 0.5, 0.3],
-        }}
-        transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute top-20 right-[10%] w-[500px] h-[500px] rounded-full bg-gradient-to-r from-secondary/40 to-secondary/20 blur-[100px]"
-      />
-      <motion.div
-        animate={{ 
-          scale: [1.2, 1, 1.2],
-          opacity: [0.2, 0.4, 0.2],
-        }}
-        transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute bottom-0 left-[5%] w-[600px] h-[600px] rounded-full bg-gradient-to-r from-accent/30 to-accent/10 blur-[120px]"
-      />
-      <motion.div
-        animate={{ 
-          x: [0, 50, 0],
-          y: [0, -30, 0],
-        }}
-        transition={{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute top-1/2 left-1/2 w-[400px] h-[400px] rounded-full bg-secondary/20 blur-[80px]"
-      />
+      {/* Static Orbs - reduced from animated to static with CSS */}
+      <div className="absolute top-20 right-[10%] w-[500px] h-[500px] rounded-full bg-gradient-to-r from-secondary/40 to-secondary/20 blur-[100px] opacity-40" />
+      <div className="absolute bottom-0 left-[5%] w-[600px] h-[600px] rounded-full bg-gradient-to-r from-accent/30 to-accent/10 blur-[120px] opacity-30" />
+      <div className="absolute top-1/2 left-1/2 w-[400px] h-[400px] rounded-full bg-secondary/20 blur-[80px]" />
 
       {/* Glass Shapes */}
       <div className="absolute top-32 right-[15%] w-72 h-72 border border-primary-foreground/10 rounded-3xl rotate-12 backdrop-blur-sm bg-primary-foreground/5" />
@@ -58,9 +38,9 @@ export function Hero() {
       <div className="container mx-auto px-4 py-16 md:py-32 relative z-10 text-center flex flex-col items-center">
         <div className="max-w-4xl flex flex-col items-center px-2">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.4 }}
           >
             <span className="inline-flex items-center gap-2 px-4 py-2 md:px-5 md:py-2.5 rounded-full bg-gradient-to-r from-secondary/30 to-secondary/10 border border-secondary/30 text-secondary text-xs md:text-sm font-medium mb-4 md:mb-6 backdrop-blur-sm">
               <span className="w-2 h-2 rounded-full bg-secondary animate-pulse" />
@@ -69,36 +49,31 @@ export function Hero() {
           </motion.div>
 
           <motion.h1
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
+            transition={{ duration: 0.4, delay: 0.1 }}
             className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-primary-foreground leading-tight mb-4 md:mb-6"
           >
             Your Competitive Edge in{" "}
             <span className="relative inline-block">
               <span className="text-gradient-gold">Global Recruitment</span>
-              <motion.span
-                initial={{ scaleX: 0 }}
-                animate={{ scaleX: 1 }}
-                transition={{ duration: 0.8, delay: 0.5 }}
-                className="absolute -bottom-1 md:-bottom-2 left-0 w-full h-0.5 md:h-1 bg-gradient-to-r from-accent to-accent/50 rounded-full origin-left"
-              />
+              <span className="absolute -bottom-1 md:-bottom-2 left-0 w-full h-0.5 md:h-1 bg-gradient-to-r from-accent to-accent/50 rounded-full" />
             </span>
           </motion.h1>
 
           <motion.p
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            transition={{ duration: 0.4, delay: 0.15 }}
             className="text-base sm:text-lg md:text-xl lg:text-2xl text-primary-foreground/80 mb-8 md:mb-10 max-w-2xl leading-relaxed mx-auto px-2"
           >
             RecruitEdgeGlobal connects trusted employers with top-tier talent worldwide through structured, confidential, and results-driven recruitment solutions.
           </motion.p>
 
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
+            transition={{ duration: 0.4, delay: 0.2 }}
             className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-10 md:mb-14 justify-center w-full sm:w-auto"
           >
             <Link to="/employers" className="w-full sm:w-auto">
@@ -115,49 +90,32 @@ export function Hero() {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.4, delay: 0.25 }}
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-3 w-full"
           >
             {trustIndicators.map((item, index) => (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.4, delay: 0.5 + index * 0.1 }}
-                whileHover={{ scale: 1.05, y: -2 }}
                 className="flex items-center gap-2 md:gap-3 px-3 py-3 md:px-4 md:py-4 rounded-xl md:rounded-2xl bg-primary-foreground/5 border border-primary-foreground/10 backdrop-blur-md hover:bg-primary-foreground/10 hover:border-secondary/30 transition-all cursor-default"
               >
                 <div className="w-8 h-8 md:w-10 md:h-10 rounded-lg md:rounded-xl bg-gradient-to-br from-accent/20 to-accent/5 flex items-center justify-center flex-shrink-0">
                   <item.icon className="w-4 h-4 md:w-5 md:h-5 text-accent" />
                 </div>
                 <span className="text-xs md:text-sm font-medium text-primary-foreground/90">{item.text}</span>
-              </motion.div>
+              </div>
             ))}
           </motion.div>
         </div>
       </div>
 
-      {/* Scroll Indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2"
-      >
-        <motion.div
-          animate={{ y: [0, 10, 0] }}
-          transition={{ duration: 1.5, repeat: Infinity }}
-          className="w-7 h-12 rounded-full border-2 border-primary-foreground/30 flex items-start justify-center p-2 backdrop-blur-sm bg-primary-foreground/5"
-        >
-          <motion.div 
-            animate={{ opacity: [0.5, 1, 0.5], y: [0, 8, 0] }}
-            transition={{ duration: 1.5, repeat: Infinity }}
-            className="w-1.5 h-3 rounded-full bg-accent"
-          />
-        </motion.div>
-      </motion.div>
+      {/* Simplified Scroll Indicator */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
+        <div className="w-7 h-12 rounded-full border-2 border-primary-foreground/30 flex items-start justify-center p-2 backdrop-blur-sm bg-primary-foreground/5">
+          <div className="w-1.5 h-3 rounded-full bg-accent animate-bounce" />
+        </div>
+      </div>
     </section>
   );
-}
+});
