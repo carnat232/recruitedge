@@ -4,6 +4,8 @@ import catherineBailey from "@/assets/team/catherine-bailey.jpg";
 import marthaKruger from "@/assets/team/martha-kruger.jpg";
 import nancyJones from "@/assets/team/nancy-jones.jpg";
 import douglasEure from "@/assets/team/douglas-eure.jpg";
+import alysaPhilip from "@/assets/team/alysa-philip.jpg";
+import nicolasRose from "@/assets/team/nicolas-rose.jpg";
 
 const team = [
   {
@@ -29,6 +31,18 @@ const team = [
     role: "Head of Employer Partnerships",
     bio: "Drives key relationships with global employers and oversees recruitment quality.",
     image: douglasEure,
+  },
+  {
+    name: "Alysa M. Philip",
+    role: "Director of Client Relations",
+    bio: "Builds lasting partnerships with clients through personalised engagement and proactive talent solutions.",
+    image: alysaPhilip,
+  },
+  {
+    name: "Nicolas B. Rose",
+    role: "Operations & Compliance Manager",
+    bio: "Ensures seamless recruitment processes and regulatory compliance across all markets.",
+    image: nicolasRose,
   },
 ];
 
